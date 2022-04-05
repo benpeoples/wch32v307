@@ -81,3 +81,8 @@ However, the functionality of WCHISPTool to change the RAM/Flash split is someth
 
 Regardless, if you have a reverse-engineered verison of WCHISPTool that can run on the UART interface (also bootloader there), it should be fairly simple to toggle BOOT0 and nRST to get it into bootloader mode, set the fuses and blow the firmware on there.
 
+## Updates on this front
+
+32.4.6 Selection word register (FLASH_OBR) is the register that controls what happens in terms of the RAM/FLASH split
+
+So it seems the bootloader has a method by which you can modify these special registers.    So it's definitely doable, just need to find out how the bootloader works.
